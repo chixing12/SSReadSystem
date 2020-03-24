@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SSReadSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>LoginCheck</servlet-name>
+  	<servlet-class>com.ssr.servlte.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginCheck</servlet-name>
+  	<url-pattern>/SSReadSystem/LoginCheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>RegisterCheck</servlet-name>
+  	<servlet-class>com.ssr.servlte.RegisterCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterCheck</servlet-name>
+  	<url-pattern>/SSReadSystem/RegisterCheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>GoodsDeleteCheck</servlet-name>
+  	<servlet-class>com.ssr.servlte.GoodsDeleteCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GoodsDeleteCheck</servlet-name>
+  	<url-pattern>/SSReadSystem/GoodsDeleteCheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>GoodsInsertCheck</servlet-name>
+  	<servlet-class>com.ssr.servlte.GoodsInsertCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GoodsInsertCheck</servlet-name>
+  	<url-pattern>/SSReadSystem/GoodsInsertCheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>GoodsUpdateCheck</servlet-name>
+  	<servlet-class>com.ssr.servlte.GoodsUpdateCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GoodsUpdateCheck</servlet-name>
+  	<url-pattern>/SSReadSystem/GoodsUpdateCheck</url-pattern>
+  </servlet-mapping>
+
+</web-app>
